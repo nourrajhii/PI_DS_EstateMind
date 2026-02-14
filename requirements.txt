@@ -1,0 +1,14 @@
+motor
+beanie
+pymongo[srv]
+requests
+beautifulsoup4
+playwright
+pandas
+openpyxl
+apscheduler
+python-dotenv
+pydantic
+httpx
+asyncio
+google-search-results
