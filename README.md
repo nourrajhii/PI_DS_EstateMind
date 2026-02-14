@@ -61,18 +61,5 @@ Enable future city insights for smarter real estate decisions.
 **Deliverable/DSO4:**  
 A forecasting system that predicts real estate trends to support investment decisions.
 
----
 
-💡 **Slide / Visual Tips:**  
-- Use **one slide per BO**, with the DSO below it.  
-- Suggested colors:  
-  - BO1 → Blue (#4A90E2)  
-  - BO2 → Green (#7ED321)  
-  - BO3 → Orange (#F5A623)  
-  - BO4 → Purple (#9013FE)  
-- Add icons for clarity:  
-  - BO1 → 📊 / 🧹  
-  - BO2 → 💰 / 📈  
-  - BO3 → ⚖️ / 🤖  
-  - BO4 → 🔮 / 🏙️  
 
