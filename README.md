@@ -17,7 +17,7 @@ This makes market analysis difficult and limits stakeholders’ ability to make 
 - ❌ Limited Transparency  
 - 📉 Difficult Decision-Making  
 
-![Tunisian Real Estate Market Context](./assets/tunisian_real_estate_context.png)
+
 
 ---
 
