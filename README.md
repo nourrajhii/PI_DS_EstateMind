@@ -56,10 +56,10 @@ A chatbot assistant offering legal advice on real estate transactions based on T
 4. **Future Visualization**
 
 **Business Objective (BO4):**  
-Enable future city insights for smarter real estate decisions.
+Enhance real estate decision-making through AI-driven 3D property modeling.
 
 **Deliverable/DSO4:**  
-A forecasting system that predicts real estate trends to support investment decisions.
+Develop an AI-powered 3D visualization and simulation engine that automatically generates property models.
 
 
 
