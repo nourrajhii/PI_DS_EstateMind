@@ -6,18 +6,21 @@ EstateMind is a high-performance, automated real estate data harvesting engine d
 The system follows a 3-stage pipeline to ensure data completeness and quality:
 
 ### 1. 🔍 Crawling (Discovery Stage)
+**Main Logic**: `discovery/explorer.py`
 The engine recursively discovers the Tunisian real estate ecosystem.
 - **Deep Discovery**: Uses SerpAPI to paginate through Google results for regional keywords (e.g., "agence immobilière Sousse").
 - **Exhaustive Mapping**: Scans for `sitemap.xml` and DNS records (`crt.sh`) to find niche agencies that are normally hidden.
 - **Quality Score**: Every discovered site is validated for relevance before being added to the target list.
 
 ### 2. ✂️ Scraping (Extraction Stage)
+**Main Logic**: `scrapers/` (Generic & Specialized)
 Once a target is validated, the scraper dives deep into the property categories.
-- **Specialized Engines**: Custom logic for major platforms like `Mubawab.tn` and `MenZili.tn`.
-- **Heuristic Generic Scraper**: A robust fallback system that automatically extracts titles, prices, and images from any real estate site using BS4.
+- **Specialized Engines** (`mubawab_scraper.py`, `menzili_scraper.py`): Custom logic for major platforms.
+- **Heuristic Generic Scraper** (`generic_scraper.py`): A robust fallback system that automatically extracts titles, prices, and images from any real estate site using BS4.
 - **Data Normalization**: Cleans and validates prices, surfaces, and locations to ensure a uniform dataset.
 
 ### 3. 💾 Data Storage (MongoDB Integration)
+**Main Logic**: `database/models.py` & `processing/reporting.py`
 All extracted data is synced in real-time to a Cloud database.
 - **MongoDB Atlas**: Fully persistent storage allowing for complex queries and analysis.
 - **Deduplication**: Uses data hashing to ensure no property is ever saved twice, even across multiple runs.
